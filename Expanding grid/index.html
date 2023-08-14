@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div style="text-align:center">
+        <h2>Expanding Grid</h2>
+        <p>Click on the boxes below:</p>
+      </div>
+      
+      <div class="row">
+        <div class="column" onclick="openTab('b1');" style="background:green;">
+          Box 1
+        </div>
+        <div class="column" onclick="openTab('b2');" style="background:blue;">
+          Box 2
+        </div>
+        <div class="column" onclick="openTab('b3');" style="background:red;">
+          Box 3
+        </div>
+      </div>
+      
+      <div id="b1" class="containerTab" style="display:none;background:green">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <h2>Box 1</h2>
+        <p>Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, te sanctus inermis ullamcorper nam. Ius error diceret deseruisse ad</p>
+      </div>
+      
+      <div id="b2" class="containerTab" style="display:none;background:blue">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <h2>Box 2</h2>
+        <p>Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, te sanctus inermis ullamcorper nam. Ius error diceret deseruisse ad</p>
+      </div>
+      
+      <div id="b3" class="containerTab" style="display:none;background:red">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <h2>Box 3</h2>
+        <p>Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, te sanctus inermis ullamcorper nam. Ius error diceret deseruisse ad</p>
+      </div>
+
+    
+       <script src="script.js"></script>
+</body>
+</html>
